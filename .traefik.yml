@@ -1,0 +1,10 @@
+displayName: Provider Plugin Demo
+type: provider
+iconPath: .assets/icon.png
+
+import: github.com/iappx/external_traefik_config_plugin
+
+summary: '[Demo] Simple Provider Plugin'
+
+testData:
+  pollInterval: 5s
