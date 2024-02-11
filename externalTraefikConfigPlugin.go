@@ -21,11 +21,11 @@ type BaseAuth struct {
 }
 
 type Instance struct {
-	ApiHost      string          `json:"apiHost,omitempty"`      // Куда будет отправлен запрос на получение данных
-	InstanceHost string          `json:"InstanceHost,omitempty"` // Адрес для проксирования (Туда будут перенаправлены запросы с текущего инстанса)
-	EntryPoints  []string        `json:"entryPoints,omitempty"`  // Точки входа для базового инстанса
-	Credentials  BaseAuth        `json:"credentials,omitempty"`  // Basic auth, если есть
-	CertResolver string          `json:"certResolver,omitempty"` // certResolver бозового инстанса
+	ApiHost      string          `json:"apiHost,omitempty"`
+	InstanceHost string          `json:"InstanceHost,omitempty"`
+	EntryPoints  []string        `json:"entryPoints,omitempty"`
+	Credentials  BaseAuth        `json:"credentials,omitempty"`
+	CertResolver string          `json:"certResolver,omitempty"`
 	Service      dynamic.Service `json:"service,omitempty"`
 }
 
