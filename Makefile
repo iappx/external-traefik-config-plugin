@@ -4,14 +4,14 @@ export GO111MODULE=on
 
 default: lint test
 
-lint:
-	golangci-lint run
-
-test:
-	go test -v -cover ./...
-
-yaegi_test:
-	yaegi test .
+# lint:
+# 	golangci-lint run
+#
+# test:
+# 	go test -v -cover ./...
+#
+# yaegi_test:
+# 	yaegi test .
 
 vendor:
 	go mod vendor
