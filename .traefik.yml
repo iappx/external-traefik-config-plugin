@@ -4,7 +4,7 @@ iconPath: .assets/icon.png
 
 import: github.com/iappx/external_traefik_config_plugin
 
-summary: ''
+summary: 'The plugin allows you to get routers of third-party instances traefik by api and send requests to them through the creation of a separate service in the base instance'
 
 testData:
   pollInterval: 2s
