@@ -1,10 +1,23 @@
-displayName: Provider Plugin Demo
+displayName: External traefik config provider
 type: provider
 iconPath: .assets/icon.png
 
 import: github.com/iappx/external_traefik_config_plugin
 
-summary: '[Demo] Simple Provider Plugin'
+summary: ''
 
 testData:
-  pollInterval: 5s
+  pollInterval: 2s
+  instanceMap:
+    another-instance:
+      apiHost: http://dashboard.traefik-instance.com
+      entryPoints:
+        - https
+      credentials:
+        username: user
+        password: password
+      service:
+        loadBalancer:
+          servers:
+            - url: http://192.168.0.1:10080
+          passHostHeader: true
